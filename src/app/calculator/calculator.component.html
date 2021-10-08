@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <div class="card">
+            <div class="card-header"><h1>CALCULATOR</h1></div>
+            <p>Simple Usage Calculator</p>
+            <div class="card-body">
+              <div class="form-group">
+                <div class="form-group d-flex flex-row">
+                  <input [(ngModel)]='num1' type="number" name="num1" class="form-control"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input [(ngModel)]='num2' type="number" name="num2" class="form-control">
+                </div>
+              </div>
+              <div class="">
+                <br>
+                <button class="btn btn-primary" (click) = 'sum()'> SUM </button>&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-primary" (click) = 'diff()'> DIFF </button>&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-primary" (click) = 'mult()'> MULT </button>&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-primary" (click) = 'div()'> DIV </button>&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-primary" (click) = 'modulo()'> Modulo </button>&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-secondary" (click)='reset()'>Reset</button>
+                <br><br><br>
+              </div>
+              <div class="card-footer">
+                <h3>{{resultheading}}</h3>
+                <h2>You result: {{result}}</h2>
+              </div>
+            </div>
+          </div>
